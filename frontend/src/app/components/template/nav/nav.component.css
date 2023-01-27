@@ -3,8 +3,8 @@
     width: 200px;
 }
 
-.sidenav as {
-    color: white;
+a[mat-list-item] {
+    color: #FFF;
 }
 
 .sidenav i {

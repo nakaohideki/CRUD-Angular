@@ -10,14 +10,6 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.red {
-    color: rgb(227, 94, 107)
-}
-
-.white {
-    color: #FFF
-}
-
 .v-middle {
     vertical-align: middle;
 }
