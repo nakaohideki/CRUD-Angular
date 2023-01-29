@@ -27,7 +27,8 @@ import { ForDirective } from "./directives/for.directive"
 import { RedDirective } from "./directives/red.directive"
 import { WhiteDirective } from "./directives/white.directive"
 import { HomeComponent } from "./views/home/home.component"
-import { ProductCrudComponent } from "./views/product-crud/product-crud.component"
+import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component'
 
 registerLocaleData(localePt)
 
@@ -44,6 +45,7 @@ registerLocaleData(localePt)
 		ForDirective,
 		ProductCreateComponent,
 		ProductReadComponent,
+  ProductUpdateComponent,
 	],
 	imports: [
 		BrowserModule,
