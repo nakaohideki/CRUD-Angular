@@ -12,7 +12,7 @@ import { ProductReadDataSource } from "./product-read-datasource"
 	styleUrls: ["./product-read.component.css"],
 })
 export class ProductReadComponent {
-	displayedColumns = ["id", "name", "price"]
+	displayedColumns = ["id", "name", "price", "action"]
 	products: Product[] = []
 
 	@ViewChild(MatPaginator) paginator!: MatPaginator
