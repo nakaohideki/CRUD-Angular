@@ -24,16 +24,16 @@ export class ProductDeleteComponent implements OnInit {
 		})
 	}
 
-	delete(): void {
+	deleteProduct(): void {
 		const id = this.route.snapshot.paramMap.get("id")
 		this.productService.delete(`${id}`).subscribe(() => {
 			this.productService.showMessage(
 				"Os dados do produto " +
 					`${this.product.name}` +
-					"foram excluídos com sucesso"
+					" foram excluídos com sucesso"
 			)
+			this.router.navigate(["/products"])
 		})
-		this.router.navigate(["/products"])
 	}
 
 	cancel(): void {

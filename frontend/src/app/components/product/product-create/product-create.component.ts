@@ -10,9 +10,9 @@ import { ProductService } from "./../product.service"
 })
 export class ProductCreateComponent implements OnInit {
 	product: Product = {
-		id: 0,
+		id: "",
 		name: "",
-		price: 0,
+		price: "",
 	}
 
 	constructor(private ProductService: ProductService, private router: Router) {}
@@ -21,7 +21,11 @@ export class ProductCreateComponent implements OnInit {
 
 	createProduct(): void {
 		this.ProductService.create(this.product).subscribe(() => {
-			this.ProductService.showMessage("Produto criado com sucesso!")
+			this.ProductService.showMessage(
+				"Os dados do produto " +
+					`${this.product.name}` +
+					" foram criados com sucesso!"
+			)
 			this.router.navigate(["/products"])
 		})
 	}

@@ -4,28 +4,33 @@
 		<mat-form-field>
 			<mat-label>Nome</mat-label>
 			<input
+				class="name-input"
 				matInput
+				Red
 				placeholder="Nome"
-				[(ngModel)]="product.name"
+				[value]="product.name"
 				name="nome"
+				disabled
 			/>
 		</mat-form-field>
 		<mat-form-field>
 			<mat-label>Preço (R$)</mat-label>
 			<input
 				matInput
+				Red
 				placeholder="Preço (R$)"
-				[(ngModel)]="product.price"
+				[value]="product.price"
 				type="number"
 				name="price"
+				disabled
 			/>
 		</mat-form-field>
 	</form>
-	<div>
+	<div class="actions">
 		<button
 			mat-raised-button
-			(click)="delete()"
-			color="primary"
+			(click)="deleteProduct()"
+			color="warn"
 		>
 			Excluir
 		</button>
