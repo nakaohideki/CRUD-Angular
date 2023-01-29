@@ -1,5 +1,7 @@
+import { registerLocaleData } from "@angular/common"
 import { HttpClientModule } from "@angular/common/http"
-import { NgModule } from "@angular/core"
+import localePt from "@angular/common/locales/pt"
+import { LOCALE_ID, NgModule } from "@angular/core"
 import { FormsModule } from "@angular/forms"
 import { MatButtonModule } from "@angular/material/button"
 import { MatCardModule } from "@angular/material/card"
@@ -18,7 +20,6 @@ import { AppRoutingModule } from "./app-routing.module"
 import { AppComponent } from "./app.component"
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component"
 import { ProductReadComponent } from "./components/product/product-read/product-read.component"
-import { ProductRead2Component } from "./components/product/product-read2/product-read2.component"
 import { FooterComponent } from "./components/template/footer/footer.component"
 import { HeaderComponent } from "./components/template/header/header.component"
 import { NavComponent } from "./components/template/nav/nav.component"
@@ -27,6 +28,8 @@ import { RedDirective } from "./directives/red.directive"
 import { WhiteDirective } from "./directives/white.directive"
 import { HomeComponent } from "./views/home/home.component"
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component"
+
+registerLocaleData(localePt)
 
 @NgModule({
 	declarations: [
@@ -41,7 +44,6 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 		ForDirective,
 		ProductCreateComponent,
 		ProductReadComponent,
-		ProductRead2Component,
 	],
 	imports: [
 		BrowserModule,
@@ -61,7 +63,7 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 		MatPaginatorModule,
 		MatSortModule,
 	],
-	providers: [],
+	providers: [{ provide: LOCALE_ID, useValue: "pt-BR" }],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
