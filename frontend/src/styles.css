@@ -13,3 +13,13 @@ body {
 .v-middle {
     vertical-align: middle;
 }
+
+.success {
+    --mdc-snackbar-container-color: #28a745;
+    -webkit-text-fill-color: white;
+}
+
+.error {
+    --mdc-snackbar-container-color: #e35e6b;
+    -webkit-text-fill-color: white;
+}
