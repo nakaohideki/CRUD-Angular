@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Backend
 
-For this project simulation scope, the backend server was set at [typicode](https://my-json-server.typicode.com/nakaohideki/backend-Angular/products), an online backend server designed only for simulations, because the changes that would be made by put, patch, and delete HTTP methods requests are not kept.
+For this project simulation scope, the backend server was set at [typicode](https://my-json-server.typicode.com/nakaohideki/backend-Angular/products), an online backend server designed only for simulations purposes. (changes that would be made by put, patch, and delete HTTP methods requests are not kept in the database).
 
 # Application deploy
 
