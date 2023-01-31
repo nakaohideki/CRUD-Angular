@@ -1,4 +1,8 @@
-.home .title {
+div {
+    border-radius: 7px;
+}
+
+div .home .title {
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
