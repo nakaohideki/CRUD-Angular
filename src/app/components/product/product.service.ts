@@ -62,7 +62,7 @@ export class ProductService {
 	errorHandler(e: any): Observable<any> {
 		this.showMessage(
 			e.message ==
-				"Http failure response for http://localhost:3001/products: 0 Unknown Error"
+				"Http failure response for https://my-json-server.typicode.com/nakaohideki/backend-Angular/products: 0 Unknown Error"
 				? "Falha durante o processo de conexão com o back-end."
 				: "Erro desconhecido",
 			true
