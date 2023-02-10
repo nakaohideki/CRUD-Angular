@@ -8,6 +8,8 @@ For this project simulation scope code, the backend server was set at [typicode]
 
 # Application deploy
 
-During this application deploy it was developed an integration with another open source data base. The access to this data base passed to be done by http methods, and the authentication process in the http request headers. 
+This application deployment was done by integrating an open-source database into it. The recovery and storage data process is made through HTTP methods and the authentication process with data contained at the HTTP request headers.
+
+The code with these data was not imported to Git to keep the database access information confidential. 
 
 To enjoy this application result integration, click [here](https://crud-app-angular-full-stack.netlify.app/).
